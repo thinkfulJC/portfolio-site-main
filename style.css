@@ -1,0 +1,148 @@
+/* Setting standard font family for site
+Trebuchet is preferred; consider less serifs if site testing on mobile proves difficult to read.
+use 'var(--font)' to call if needed in text styling.
+*/
+:root {
+    --font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* Single-color bg on entire page. */
+    background-color: #372d4b;
+}
+
+/* Setting scalable settings for image.
+Consider changing values if mobile testing suggests.
+*/
+img {
+    margin: 0 auto;
+    width: 60%;
+    max-width: 70%;
+    min-width: 40%;
+}
+
+header {
+    height: 150px;
+}
+
+main {
+    padding-top: 10px;
+    min-height: 400px;
+}
+
+footer {
+    margin-top: 10px;
+    height: 50px;
+    text-align: center;
+    font-family: var(--font);
+    font-weight: 100;
+    font-size: 12px;
+    color: #048BA8;
+}
+
+a:link {
+    color: #b5a2de;
+}
+
+a:visited {
+    color: #cdc5de;
+}
+
+a:hover {
+    color: #a387e0
+}
+
+a:active {
+    color: #8d67e1
+}
+
+main>div>hr {
+    margin-top: 25px;
+    width: 50%;
+    border-top: 5px #0e849e;
+    border-bottom: 5px #7cb3bf;
+    border-style: dashed;
+    border-width: 6px;
+    border-radius: 10px;
+}
+
+/* Setting a longer hr for header */
+header>div>hr {
+    margin-top: 10px;
+    width: 80%;
+    border-top: 5px #0e849e;
+    border-bottom: 5px #7cb3bf;
+    border-style: dashed;
+    border-width: 10px;
+}
+
+/* Set standard font/margins for page. */
+h1,
+h2,
+h3,
+h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: var(--font)
+}
+
+h1 {
+    font-weight: 400;
+    font-variant: small-caps;
+    font-style: italic;
+    font-size: 56px;
+    color: #2cafcd;
+}
+
+/* Will be reusing h2 differently in different parts of page */
+body>header>div>h2 {
+    font-weight: 400;
+    font-variant: small-caps;
+    font-size: 20px;
+    color: #2cafcd;
+}
+
+/* distinguishing Main Text h2 from Header h2 */
+main>div>section>h2 {
+    font-weight: 400;
+    font-variant: small-caps;
+    font-size: 42px;
+    color: #33abc6;
+}
+
+main>div>section>article>h3 {
+    font-weight: 400;
+    font-size: 22px;
+    color: #8cd1ec;
+
+}
+
+/* Only utilized in body */
+h4 {
+    font-weight: 400;
+    font-size: 20px;
+    color: #d6c2fd;
+}
+
+p {
+    text-align: justify;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-family: var(--font);
+    font-size: 18px;
+    color: #bfaede;
+}
+
+/* Setting styling for ul and ol elements */
+ul,
+ol {
+    font-family: var(--font);
+    font-size: 16px;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: #bfaede;
+}
